@@ -12,6 +12,10 @@
     "type": "git",
     "url": "https://github.com/toshi1127/react.js-web3"
   },
+  "keywords": [
+    "react",
+    "web3"
+  ],
   "author": "toshi1127",
   "license": "ISC",
   "dependencies": {
