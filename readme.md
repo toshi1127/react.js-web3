@@ -1,5 +1,5 @@
 # react.js-web3
-![demo](https://raw.githubusercontent.com/wiki/toshi1127/react.js-web3/images/sample.gif)
+![demo](https://raw.githubusercontent.com/wiki/toshi1127/react.js-web3/images/last.gif)
 - By detecting login and logout of MetaMask, you can develop high DApps of UX.
 - Supports import of contracts
 
@@ -11,16 +11,22 @@
 ### Web3Container
 ```
 import { Web3Container } from 'react.js-web3'
+import Examples from '@conponents/Example'
 
 // ...
 
-render () {
-  return (
-    <Web3Container
-      renderLoading={() => <div>Loading Accounts Page...</div>}
-      render={({ accounts }) => <Examples accounts={accounts} />}
-    />
-  )
+class Index extends React.Component {
+
+  // ...
+
+  render () {
+    return (
+      <Web3Container
+        renderLoading={() => <div>Loading Accounts Page...</div>}
+        render={({ accounts }) => <Examples accounts={accounts} />}
+      />
+    )
+  }
 }
 ```
 
